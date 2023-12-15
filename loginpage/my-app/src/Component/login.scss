@@ -1,126 +1,228 @@
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
-.main{
+
+.main {
     display: flex;
-    height: 100%;
-    width: 100vw;
-    
+    flex-wrap: wrap;
 }
-.left-child{
-    height: 100%;
-    width: 40%;
-    // border: 1px solid black;
-    margin:2%;
+
+.left-child {
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    // margin: 2%;
     padding: 2%;
 }
-.left-child-top h1{
-    font-size: 48;
-    font-weight: bolder;
-    margin:5%;
-   
-    
-    
-}
-.left-child-top span{
-    font-size: 18;
 
-    
+.left-child-top h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    margin: 5%;
 }
-.form-card label{
-    color:#718096;
+
+.left-child-top span {
+    font-size: 18px;
+}
+
+.form-card label {
+    color: #718096;
     font-size: 12px;
 }
-.form-card{
-    padding:3%;
-    margin:5%;
+
+.form-card {
+    padding: 3%;
+    margin: 5%;
 }
-.form-card input{
-    width:60%;
-    height:30px;
-    border-radius: 15px;
-    border: 1px solid  #718096;
-    margin:3%;
-    padding:1.2%;
-    
-}
-.form-card button{
+
+.form-card input {
+    width: 60%;
     height: 30px;
+    border-radius: 15px;
+    border: 1px solid #718096;
+    margin: 3%;
+    padding: 1.2%;
+}
+
+.form-card button {
     width: 63%;
+    height: 40px;
     background-color: #1C4532;
     color: #F7FAFC;
-    border-radius:15px;
+    border-radius: 15px;
     cursor: pointer;
     margin-left: 3%;
     border: 0px;
-    text-align:center;
-    font-weight: 600;
-    font-size:  18px;
-    height: 40px;
-
-
-}
-.login-card{
-    margin-left:3%;
-    border-top: 1px solid #CBD5E0 ;
-
-    
-    
-}
-.login{
-    
     text-align: center;
-    border:1px solid #CBD5E0;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.login-card {
+    margin-left: 3%;
+    border-top: 1px solid #CBD5E0;
+}
+
+.login {
+    text-align: center;
+    border: 1px solid #CBD5E0;
     height: 40px;
-   
     text-align: center;
     border-radius: 30px;
     padding: 2px;
     width: 320px;
     color: #67728A;
-}
-.google img{
-    size: 2px;
-    float:left;
-    margin: 10px;
-
+    align-items: center;
     
 }
-.facebook img{
+
+.google img {
     size: 2px;
-    float:left;
+    float: left;
     margin: 10px;
-    
-}
-.google{
-    margin:10px;
-   h2{
-    size:10px;
-   }
 }
 
-.facebook{
-    margin:10px;
+.facebook img {
+    size: 2px;
+    float: left;
+    margin: 10px;
 }
-.left-child-top span{
-    color:#718096;
+
+.google {
+    text-align: center;
+    
+    margin: 10px;
+    h2 {
+        size: 10px;
+    }
+}
+
+.facebook {
+    margin: 10px;
+}
+
+.left-child-top span {
+    color: #718096;
     margin-left: 12%;
-    a{
+    a {
         text-decoration: underline;
         color: #1C4532;
         cursor: pointer;
     }
-
 }
-.right-child{
 
+.right-child {
     height: 100%;
     width: 40%;
     border: 1px solid black;
-    margin:2%;
+    margin: 2%;
     padding: 2%;
-    background-image: url("./Assest/Rectangle\ 1.png"),url("./Assest/Ellipse\ 1.png") ;
-    
+    background-image: url("./Assest/Rectangle 1.png"), url("./Assest/Ellipse 1.png");
+}
 
+.right-child-head h2 {
+    color: #F7FAFC;
+    font-weight: 900;
+}
+
+.right-child-head {
+    color: #CBD5E0;
+    align-items: center;
+    margin-top: 1%;
+
+    h2 {
+        word-spacing: 2px;
+    }
+
+    p {
+        margin-top: 2%;
+        letter-spacing: 1px;
+        justify-content: center;
+    }
+}
+
+.right-child-card {
+    margin-top: 10%;
+    height: 40%;
+    width: 90%;
+    background-color: #F7FAFC;
+    border-radius: 20px;
+    font-weight: bold;
+    padding: 1%;
+    text-align: center;
+    color: #1C4532;
+    font-size: larger;
+
+    h3 {
+        font-weight: bold;
+        margin-top: 15%;
+        margin-right: 30%;
+        letter-spacing: 1px;
+    }
+
+    p {
+        margin-top: 5%;
+        letter-spacing: 1px;
+        color: #718096;
+        margin-right: 30%;
+        font-size: 10px;
+        word-spacing: 4px;
+    }
+
+    img {
+        height: 44%;
+        width: 12%;
+        position: absolute;
+        top: 13.2%;
+        right: 7.2%;
+    }
+
+    .btn {
+        width: 30%;
+        height: 10%;
+        margin-top: 5%;
+        margin-right: 29%;
+        border-radius: 18px;
+        background-color: #1C4532;
+        color: #F7FAFC;
+        cursor: pointer;
+    }
+}
+
+.right-child-card-small {
+    display: none; /* Hide on larger screens */
+}
+
+/* Media query for screens smaller than 768px (typical tablets) */
+@media screen and (max-width: 768px) {
+    .left-child {
+        width: 100%;
+    }
+
+    .right-child {
+        display: none;
+    }
+
+    .right-child-card-small {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+/* Media query for screens smaller than 480px (typical phones) */
+@media screen and (max-width: 480px) {
+    .left-child-top h1 {
+        font-size: 36px;
+    }
+
+    .left-child-top span {
+        font-size: 14px;
+    }
+
+    .form-card input,
+    .form-card button {
+        width: 100%;
+    }
 }
