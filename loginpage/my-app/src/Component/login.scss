@@ -6,20 +6,20 @@
 .main {
     display: flex;
     flex-wrap: wrap;
+    height: 40%;
 }
 
 .left-child {
     align-items: center;
     flex: 1;
-    width: 100%;
-    // margin: 2%;
+    width: 50%;
+    margin: 2%;
     padding: 2%;
 }
 
 .left-child-top h1 {
-    font-size: 48px;
+    font-size: 40px;
     font-weight: bolder;
-    margin: 5%;
 }
 
 .left-child-top span {
@@ -33,7 +33,7 @@
 
 .form-card {
     padding: 3%;
-    margin: 5%;
+    margin: 4%;
 }
 
 .form-card input {
@@ -74,7 +74,6 @@
     width: 320px;
     color: #67728A;
     align-items: center;
-    
 }
 
 .google img {
@@ -91,11 +90,7 @@
 
 .google {
     text-align: center;
-    
     margin: 10px;
-    h2 {
-        size: 10px;
-    }
 }
 
 .facebook {
@@ -113,10 +108,9 @@
 }
 
 .right-child {
-    height: 100%;
-    width: 40%;
-    border: 1px solid black;
-    margin: 2%;
+    height: auto;
+    width: 50%;
+    // border: 1px solid black;
     padding: 2%;
     background-image: url("./Assest/Rectangle 1.png"), url("./Assest/Ellipse 1.png");
 }
@@ -128,10 +122,11 @@
 
 .right-child-head {
     color: #CBD5E0;
-    align-items: center;
-    margin-top: 1%;
+    text-align: center;
+    margin-top: 10%;
 
     h2 {
+        font-size: 200%;
         word-spacing: 2px;
     }
 
@@ -156,13 +151,13 @@
 
     h3 {
         font-weight: bold;
-        margin-top: 15%;
+        margin-top: 2%;
         margin-right: 30%;
         letter-spacing: 1px;
     }
 
     p {
-        margin-top: 5%;
+        margin-top: 3%;
         letter-spacing: 1px;
         color: #718096;
         margin-right: 30%;
@@ -171,18 +166,22 @@
     }
 
     img {
-        height: 44%;
-        width: 12%;
-        position: absolute;
-        top: 13.2%;
-        right: 7.2%;
+        height: 30%;
+        width: 35%;
+      margin-top:10%;
+      float: right;
+    //   position: static;
+    
+    //   text-align: right;
     }
 
     .btn {
+        float: right;
+        border: 0px;
         width: 30%;
-        height: 10%;
+        height: 17%;
         margin-top: 5%;
-        margin-right: 29%;
+        margin-right: 20%;
         border-radius: 18px;
         background-color: #1C4532;
         color: #F7FAFC;
@@ -191,10 +190,20 @@
 }
 
 .right-child-card-small {
-    display: none; /* Hide on larger screens */
+    height: 11%;
+    width: 30%;
+
+    background-color: #F7FAFC;
+    border-radius: 15px;
+    margin-left: 60%;
+    span {
+        position: absolute;
+    }
+    img{
+        display: hidden;
+    }
 }
 
-/* Media query for screens smaller than 768px (typical tablets) */
 @media screen and (max-width: 768px) {
     .left-child {
         width: 100%;
@@ -211,14 +220,13 @@
     }
 }
 
-/* Media query for screens smaller than 480px (typical phones) */
 @media screen and (max-width: 480px) {
     .left-child-top h1 {
-        font-size: 36px;
+        font-size: 30px;
     }
 
     .left-child-top span {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .form-card input,
