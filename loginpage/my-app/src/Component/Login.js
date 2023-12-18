@@ -40,7 +40,9 @@ function Login() {
       </div>
       <div className="right-child">
         <div className="right-child-card">
-        <img src="https://xcelore.com/wp-content/uploads/2023/08/cropped-cropped-cropped-logo-1.png" />
+          <div className="right-logo-img">
+          <img src="https://xcelore.com/wp-content/uploads/2023/08/cropped-cropped-cropped-logo-1.png" />
+          </div>
           <h3>
             Reach financial <br /> goals faster
           </h3>

@@ -68,13 +68,14 @@
 }
 
 .login {
+    size:5%;
     text-align: center;
     border: 1px solid #CBD5E0;
     height: 40px;
     text-align: center;
     border-radius: 30px;
     padding: 2px;
-    width: 320px;
+    width: 60%;
     color: #67728A;
     align-items: center;
 }
@@ -243,5 +244,11 @@
     .form-card input,
     .form-card button {
         width: 100%;
+    }
+    .login-card{
+        width: 100%;
+    }
+    .right-child{
+        justify-content: center;
     }
 }
