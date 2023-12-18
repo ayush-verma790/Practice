@@ -21,7 +21,7 @@ function Login() {
           <form className="form-card">
             <label>E-mail</label>
             <br />
-            <input type="mail" placeholder="example@gmail.com"></input>
+            <input type="mail" placeholder="example@gmail.com" required></input>
             <br />
             <label>Password</label> <br />
             <input type="password" placeholder="******"></input>
