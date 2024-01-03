@@ -1,0 +1,19 @@
+{
+  "name": "crud-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev":"nodemon index.ja",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.10.0",
+    "graphql-tag": "^2.12.6",
+    "mongoose": "^8.0.3",
+    "nodemon": "^3.0.2"
+  }
+}
