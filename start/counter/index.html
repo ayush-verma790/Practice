@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter app</title>
+</head>
+<body>
+    <h1 id="demo">$</h1>
+    <button onclick="add()"> + </button>
+    <button onclick="remove()"> - </button>
+
+    <script>
+        let count=0;
+        function add()
+        {
+            document.getElementById("demo").innerHTML=count++;
+        }
+        function remove()
+        {
+            document.getElementById("demo").innerHTML=count--;
+        }
+     
+    </script>
+</body>
+</html>
